@@ -14,8 +14,19 @@ const root = ReactDom.createRoot(el)
 // 4. Create Components 
 
 function App(){
+   
+  let message = 'Hello message';
+  // React can show on curl braces only number, string 
+
+  let messageLength = 5
+ 
+
+  if (Math.random()>0.5){
+    message ='Another message'
+  }
+
   return <div>
-    <h1>Hi there react js</h1>
+     <h1>{message} {messageLength}</h1>
   </div>
 }
 
