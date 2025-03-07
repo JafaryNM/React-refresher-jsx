@@ -17,6 +17,8 @@ function App(){
    
   let message = 'Hello message';
   // React can show on curl braces only number, string 
+  // React can treat array, and undefined , null  return nothing 
+  // React will raised an errors if you  return {objectValue}
 
   let messageLength = 5
  
