@@ -14,27 +14,17 @@ const root = ReactDom.createRoot(el);
 // 4. Create Components
 
 function App() {
-  let message = "Hello message";
-  // React can show on curl braces only number, string
-  // React can treat array, and undefined , null  return nothing
-  // React will raised an errors if you  return {objectValue}
-  // You can return direct value of react from curl 
+  // You can pass props as varible using curl
 
-  let messageLength = 5;
-
-
-
-  if (Math.random() > 0.5) {
-    message = "Another message";
-  }
+  const inputType = "number";
+  const minValue = 5;
 
   return (
-    <div>
-      <h1>
-        {message} {messageLength}
-      </h1>
-      <p>{new Date().toDateString()}</p>
-    </div>
+    <input
+      type={inputType}
+      min={minValue}
+      style={{ border: "3px solid red" }}
+    />
   );
 }
 
